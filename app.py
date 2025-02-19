@@ -262,7 +262,7 @@ def survey():
         write_excel(form_answers)
         return redirect(url_for('success'))
 
-    return render_template('survey.html', questions=questions, options=options)
+    return render_template('index.html', questions=questions, options=options)
 
 @app.route('/success')
 def success():
